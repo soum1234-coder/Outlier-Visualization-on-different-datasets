@@ -11,7 +11,7 @@ Select points with lowest cluster probabilities as outliers
 Plot the clustering, with the outliers highlighted
 Display images corresponding to some of these outliers
 
-#Datasets and featurization
+##Datasets and featurization
 
 Use make_blobs to generate a simple dataset. This isn’t an image dataset.
 If we use this, we don’t have to featurize further. You already have a vector representation for each datapoint.
@@ -25,7 +25,8 @@ For instance, use MobilenetV2; or see this tutorial. These featurizers take an i
 
 
 
-#Embedding
+##Embedding
+
 For these tasks, we use ‘embedding’ to mean a 2d embedding of a feature vector so that we can visualize data points in a simple scatter plot. That is, given a 1280-dimensional feature vector (or some other m-dimensional feature vector) for some data point, we calculate a 2-dimensional representation for the same data point such that:
 Data points that are close to each other in the original feature space must be close to each other in the 2-d space.
 
@@ -34,7 +35,7 @@ PCA (from scikit-learn)
 UMAP
 
 
-#Clustering
+##Clustering
 
 From the previous step, we have two representations available for the data:
 The full feature representation after the featurization
